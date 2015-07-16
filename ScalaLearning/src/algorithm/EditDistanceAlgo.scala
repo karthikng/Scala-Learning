@@ -1,7 +1,7 @@
-
+package algorithm
 
 /**
- * @author kgundego
+ * @author Karthik
  */
 
 object EditDistanceAlgo {
@@ -46,15 +46,14 @@ object EditDistanceAlgo {
     }
     
     matrix(str1.length()-1)(str2.length()-1)
-  }                                         //> runAlgo: (str1: String, str2: String)Int
+  }                                         
   
   def minCost(val1:Int, val2:Int, val3:Int) = {
     var min = if(val1 > val2) val2 else val1
     min = if(val3 < min) val3 else min
     min
-  }                                         //> minCost: (val1: Int, val2: Int, val3: Int)Int
+  }                                         
 
   println("Final cost : ",runAlgo("appropriate meaning", "approximate matching"))
-                                                  //> Running Edit distance algorithm
-                                                  //| (Final cost : ,7)
+  
 }
