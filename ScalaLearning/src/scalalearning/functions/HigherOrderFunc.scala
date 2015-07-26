@@ -1,7 +1,7 @@
-
+package scalalearning.functions
 
 /**
- * @author kgundego
+ * @author Karthik
  */
 object HigherOrderFunc {
   def main(args: Array[String]): Unit = {
